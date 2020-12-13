@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LeadTheRoad</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <a class="navbar-brand" href="#"><i class="fab fa-facebook text-white ml-5" style="font-size:20px"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    Navbar text with an inline element
+                </span>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
+            <div class="container">
+                <img src="~/images/logo.jpg" width="80" height="50" />
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="AboutUs" asp-action="About">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Feedback">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Query">Query</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer>
+        <div class="container-fluid mt-5 p-5" style="background-color:antiquewhite">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>About LeadTheRoad</h2>
+                    <p>We are a leader in the Travel Management Industry geared towards providing high quality, enhanced services for travellers. We have the ability to administer a Company-wide travel policy with exceptional data management capability</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h2>Latest Articles</h2>
+                    <p>Amadeus has always been number 1 for us! </p>
+                    <p>04 December 2017</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h2>Useful Links</h2>
+                    <a href="#"><p>LeadTheRoad Group </p></a>
+                    <a href="#"><p>Corporate Clients </p></a>
+                </div>
+
+                <div class="col-md-3">
+                    <h2>Get In Touch</h2>
+                    <p>Get in touch to discover more. Our experts are here to help. Contact us now. </p>
+                    <a href="#"><p>Corporate Clients </p></a>
+                    <ul style="list-style:none">
+                        <li><i class="fa fa-phone imargin"></i><span class="">: 08032111285 (24 hr hotline)</span></li>
+                        <li><i class="fa fa-phone imargin"></i><span class="">: 08032111285 (24 hr hotline)</span></li>
+                        <li><i class="fa fa-phone imargin"></i><span class="">: 08032111285 (Holiday Line)</span></li>
+                        <li><i class="fa fa-phone imargin"></i><span class="">: 08032111285 (Holiday Line)</span></li>
+                        <li><i class="fa fa-envelope imargin"></i><span class="">: leadtheroad@gmail.com </span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="border-top footer text-muted">
+        <div class="container-fluid bg-info text-center">
+            &copy; 2020 - LeadTheRoad - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

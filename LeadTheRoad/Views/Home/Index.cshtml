@@ -1,0 +1,332 @@
+﻿@model TourViewModel
+<section class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/images/image1.jpg" class="d-block w-100 img-fluid image" style="height:450px" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Your trip made easy</h2>
+                            <p>SWITZERLAND, HERE WE COME</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/images/usa.jpg" class="d-block w-100 img-fluid image" style="height:450px" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Enjoy the fun of it</h2>
+                            <p>AMAZING PLACES OF VISIT IN SWITZERLAND</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/images/switzer1.jpg" class="d-block w-100 img-fluid image" style="height:450px" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>10 days of lovely experiences</h2>
+                            <p>FROM US TO SWITZERLAND</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="row jumbotron mt-4 mb-4">
+    <div class="col-md-6">
+        <h3 class="text-center">Our Mission</h3>
+        <p>
+            To offer holistic, flexible, responsive and personalized services with technological proficiency and technical expertise with value added services in prompting excellent service delivery to our clients.
+        </p>
+    </div>
+    <div class="col-md-6">
+        <h3 class="text-center">Our Vision</h3>
+        <p>
+            To become America’s foremost travel and destinations manager of choice. By striving to be the finest and most competitive offline and online travel and destinations manager in America exceeding customer expectations with impeccable and personalized services....
+        </p>
+    </div>
+</div>
+
+<section class="container mt-4 mb-4  jumbotron-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Lead Road International</h1>
+            <p>
+                Lead Road International being one of the leading Nigerian travel agencies, specializing in conducting tours and travel worldwide.
+            </p>
+            <p>
+                We offer our clients a varied range of travel products which includes a choice of more than 150 airlines and over 65,000 hotels, holiday packages, car rentals and travel insurance.
+                We are proud of our passion for travel, pleasing experiences and first class customer satisfaction.
+            </p>
+        </div>
+
+
+        @*<div class="col-md-6">
+                <h2>Our Mission</h2>
+                <p>To offer holistic, flexible, responsive and personalized services with technological proficiency and technical expertise with value added services in prompting excellent service delivery to our clients.</p>
+                <h2>Our Mission</h2>
+                <p>To become Nigeria’s foremost travel and destinations manager of choice. By striving to be the finest and most competitive offline and online travel and destinations manager in Nigeria exceeding customer expectations with impeccable and personalized services. </p>
+            </div>*@
+    </div>
+</section>
+
+
+@*<section class="container-fluid" id="mission">
+        <div class="row jumbotron">
+
+            <div class="col-md-6">
+                <h3 class="text-center">Our Mission</h3>
+                <p>
+                    To offer holistic, flexible, responsive and personalized services with technological proficiency and technical expertise with value added services in prompting excellent service delivery to our clients.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-center">Our Vision</h3>
+                <p>
+                    To become America’s foremost travel and destinations manager of choice. By striving to be the finest and most competitive offline and online travel and destinations manager in America exceeding customer expectations with impeccable and personalized services....
+                </p>
+            </div>
+        </div>
+    </section>*@
+
+
+<div class="text-center mt-5"><h4>HOST COUNTRY</h4></div>
+<div class="text-center"><h4>(Switzerland)</h4></div>
+<div class="card-deck mt-4 mb-5">
+   
+    <div class="card">
+        <a asp-controller="Home" asp-action="Genova" style="text-decoration:none">
+            <img src="~/images/Genova.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+                <h5 class="card-title">Genova</h5>
+                <p class="card-text">View Details</p>
+                @*<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>*@
+            </div>
+        </a>
+    </div>
+    
+    <div class="card">
+        <a asp-controller="Home" asp-action="Bern"  style="text-decoration:none">
+            <img src="~/images/switz1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+                <h5 class="card-title">Bersel</h5>
+                <p class="card-text">View Details</p>
+                @*<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>*@
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a asp-controller="Home" asp-action="Basel"  style="text-decoration:none">
+            <img src="~/images/switz2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+                <h5 class="card-title">Bern</h5>
+                <p class="card-text">View Details</p>
+                @*<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>*@
+            </div>
+         </a>
+    </div>
+</div>
+
+
+<section class="container mt-4 mb-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="text-center">FLIGHT RESERVATION</h1>
+            <div class="bg-dark mt-3">
+                <form class="p-5">
+                    <div class="form-group">
+                        <input asp-for="Flight.Name" type="text" class="form-control" id="inputAddress" placeholder="Full Name Here">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input asp-for="Flight.PhoneNo" type="number" class="form-control" id="inputAddress" placeholder="Phone Number Here" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input asp-for="Flight.Email" type="email" class="form-control" id="inputEmail4" placeholder="Email Here">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input asp-for="Flight.FlyFrom" type="text" class="form-control" id="inputAddress" placeholder="Flying From" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input asp-for="Flight.FlyTo" type="text" class="form-control" id="inputAddress" placeholder="Flying To" />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input asp-for="Flight.CurLocation" class="form-control" id="inputAddress" placeholder="" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input asp-for="Flight.Destination" class="form-control" id="inputAddress" placeholder="" />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <select asp-for="NoAdult" asp-items="Html.GetEnumSelectList<NoAdult>()" class="form-control" id="exampleFormControlSelect1">
+                                <option selected="selected" value="">
+                                    Number of Adults (12yrs+)
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <select asp-for="NoAdult" asp-items="Html.GetEnumSelectList<NoAdult>()" class="form-control" id="exampleFormControlSelect1">
+                                <option selected="selected" value="">
+                                    Number of Children (2-11yrs)
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        @*<div class="form-group col-md-6">
+                                <input asp-for="Flight.NoInfant" type="number" class="form-control" id="inputAddress" placeholder="Number of Imfant" />
+                            </div>*@
+
+                        <div class="form-group col-md-6">
+                            <select asp-for="NoAdult" asp-items="Html.GetEnumSelectList<NoAdult>()" class="form-control" id="exampleFormControlSelect1">
+                                <option selected="selected" value="">
+                                    Number of Children (2-11yrs)
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <select asp-for="FlightTyp" asp-items="Html.GetEnumSelectList<FlightType>()" class="form-control" id="exampleFormControlSelect1">
+                                <option selected="selected" value="">
+                                    Select Ticket Class
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="text-center pb-5">
+                        <a asp-controller="Book" asp-action="Create" class="btn btn-block bg-info btn-secondary text-center">Send Request</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <h1 class="text-center text-dark">HOTEL RESERVATION</h1>
+            <div class="bg-dark mt-3">
+                <form class="p-5">
+                    <div class="form-group">
+                        <input asp-for="Hotel.Name" id ="Name" type="text" class="form-control" placeholder="Full Name Here">
+                        <div class="text-center" id="alert1"></div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input asp-for="Hotel.PhoneNo" id="Phone" type="number" class="form-control" placeholder="Phone Number Here" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input asp-for="Hotel.Email" id="email" type="email" class="form-control" placeholder="Email Here">
+                        </div>
+                        <div class="text-center" id="alert2"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <input asp-for="Hotel.FlyTo" id ="flyt" type="text" class="form-control" placeholder="Address Here">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input asp-for="Hotel.CurLocation" id ="flyf" class="form-control" placeholder="Flying From" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input asp-for="Hotel.Destination" class="form-control" id="Destina" placeholder="Flying To" />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <select asp-for="NoAdult" asp-items="Html.GetEnumSelectList<NoAdult>()" class="form-control" id="Adul">
+                                <option selected="selected" value="">
+                                    Number of Adults (12yrs+)
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <select asp-for="NoAdult" asp-items="Html.GetEnumSelectList<NoAdult>()" class="form-control" id="Child">
+                                <option selected="selected" value="">
+                                    Number of Children (2-11yrs)
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <select asp-for="NoAdult" asp-items="Html.GetEnumSelectList<NoAdult>()" class="form-control" id="Infa">
+                                <option selected="selected" value="">
+                                    Number of Infants
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <select asp-for="NoAdult" asp-items="Html.GetEnumSelectList<NoAdult>()" class="form-control" id="Room">
+                                <option selected="selected" value="">
+                                    Number of Rooms
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="text-center pb-5">
+                        <a asp-controller="Book" asp-action="Create" class="btn btn-block btn-secondary text-center bg-info">Send Request</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<h1 class="text-center">Popular Destination</h1>
+
+<div class="container">
+    <div class="row">
+        @foreach (var items in Model.Packages)
+        {
+            <div class="col-md-3 mb-3">
+                <div class="card-deck">
+                    <div class="card">
+                        <img src='@Url.Content(items.Image)' class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Location: @items.Location</h5>
+                            <p class="card-text">Price: @items.Cost</p>
+                            <p class="card-text">Duration: @items.Duration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+
+
+
+
+
